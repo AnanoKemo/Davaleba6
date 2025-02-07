@@ -1,0 +1,123 @@
+/* General body style */
+body {
+  margin: 0;
+  background-color: #ff7978;
+  box-sizing: border-box; /* Apply box-sizing globally */
+}
+
+/* Container for the app */
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 30px;
+  background-size: cover;
+}
+
+/* Left-side information container */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  max-width: 40%;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Right-side form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+/* Form box styling */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  width: 100%;
+  max-width: 474px;
+  max-height: 540px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  color: black;
+  width: 100%;
+  max-width: 450px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+  border-color: #220379;
+}
+
+.submit-button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 450px;
+  color: white;
+  background-color: #38CC8B;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #77E2B3;
+}
+
+.error-message {
+  color: #dd3b3b;
+  font-size: 12px;
+  text-align: right;
+  margin: 0;
+  max-width: 400px;
+}
+
+.terms {
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+}
+/* Add error styles to inputs */
+.input-error {
+  background-image: url('./assets/error.png'); /* Adjust the path if needed */
+  background-position: right 10px center; /* Position the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-size: 16px 16px; /* Adjust size of the error icon */
+  border-color: #dd3b3b; /* Highlight border in red when there's an error */
+}
